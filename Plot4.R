@@ -24,7 +24,7 @@ testopen4<-function(afile){
   legend("topright",bty = "n",lty=c(1,1),col=c("black","red","blue"),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
   with(usabledata,plot(dateandtime,as.character(Voltage),xlab="datetime",ylab="Voltage",type="n"))
   with(usabledata,lines(dateandtime,as.character(Voltage)))
-  with(usabledata,plot(dateandtime,as.character(Global_reactive_power),xlab="datetime",type="n"))
+  with(usabledata,plot(dateandtime,as.character(Global_reactive_power),ylab="Global_reactive_power",xlab="datetime",type="n"))
   with(usabledata,lines(dateandtime,as.character(Global_reactive_power)))
   
   dev.off()
